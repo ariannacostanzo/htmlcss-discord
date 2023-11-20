@@ -11,12 +11,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-/* Utils */
-
 /* Resetting style of button */
 
 button {
@@ -35,6 +29,15 @@ ul li {
 a {
     color: white;
     text-decoration: none;
+}
+
+
+/* Utils */
+
+
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #23272a;
 }
 
 
@@ -65,6 +68,12 @@ a {
     font-size: 20px;
     padding: 15px 30px;
     border-radius: 25px;
+}
+
+.btn-lilla {
+    background-color: #8ea1e1;
+    color: white;
+    margin-top: 20px;
 }
 
 /* header */
@@ -156,18 +165,14 @@ header ul {
     margin-top: 30px;
 }
 
-
-
-
-
-
 /* main content */
 
 .section {
-    height: 600px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #23272a;
 }
 
 .bg-white {
@@ -175,7 +180,7 @@ header ul {
 }
 
 .bg-gray {
-    background-color: lightgray;
+    background-color: #f6f6f6;
 }
 
 /* main boxes */
@@ -191,34 +196,64 @@ header ul {
 
 .main-box {
     min-height: 100%;
-    border: var(--border);
+    /* border: var(--border); */
 }
 
 
 .main-box.main-box-large {
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
     flex-basis: 60%;
+    padding: 50px;
     
 }
 
 .main-box.main-box-small {
-    background-color: pink;
+    /* background-color: pink; */
     flex-basis: 40%;
+    padding: 50px;
     
+}
+
+.main-box h2 {
+    font-size: 48px;
+    margin-top: 30px;
+}
+
+.main-box p {
+    font-size: 20px;
+    margin-top: 1.5rem;
 }
 
 /* green section */
 
 .large-section {
-    height: 1100px;
+    height: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .main-box.main-box-extra-large {
-    background-color: forestgreen;
+    /* background-color: forestgreen; */
     flex-basis: 100%;
+    text-align: center;
+}
+
+#big-item {
+    height: 700px;
+}
+
+.stars-container {
+    font-size:30px;
+    font-weight: bold;
+}
+
+.stars-container span {
+    background-image: url(img/stars.svg);
+    background-size: contain;
+    padding: 20px 50px;
+    background-repeat: no-repeat;
+    
 }
 
 /* footer */
