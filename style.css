@@ -11,10 +11,66 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Utils */
+
+/* Resetting style of button */
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+/* Resetting style of list and a */
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* button classes */
+.btn {
+    cursor: pointer;
+}
+
+.btn-small {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 20px;
+}
+
+.btn-light {
+    background-color: white;
+}
+
+.btn-dark {
+    background-color: #23272a;
+    color: white;
+    margin-left: 20px;
+}
+
+.btn-big {
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 25px;
+}
+
 /* header */
 
 header {
-    background-color: lightblue;
+    background-color: #255ee9;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -22,57 +78,88 @@ header {
 }
 
 header nav {
-    background-color: goldenrod;
     display: flex;
-    width: 60%;
+    width: 65%;
     min-height: 60%;
     font-size: 22px;
+    align-items: center;
 }
 
 .small-header-box {
     flex-basis: 20%;
-    border: var(--border);
 }
 
 .large-header-box {
     flex-grow: 1;
-    border: var(--border);
     
 }
 
+
+
 /* testo */
 
-nav :nth-child(1) {
-    padding-top: 5px;
-    padding-left: 5px;
+#discord-logo {
+    margin-top: 10px;
 }
 
 nav :nth-child(2) {
     text-align: center;
-    padding-top: 5px;
+    
 }
 nav :nth-child(3) {
     text-align: right;
-    padding-top: 5px;
-    padding-right: 5px;
+    
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    font-weight: 600;
+    align-items: center;
+    padding: 0 80px;
 }
 
 /* hero container */
 
 .hero-image-container {
-    background-color: darkblue;
-    height: 500px;
+    background-image: url(img/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .hero-image {
-    background-color: violet;
-    height: 80%;
-    border: var(--border);
-    width: 50%;
+    /* background-color: violet; */
+    height: 60%;
+    /* border: var(--border); */
+    width: 40%;
+    text-align: center;
+    color: white;
+
 }
+
+.hero-image h1 {
+    font-size: 55px;
+    margin-bottom: 40px;
+}
+
+.hero-image p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.hero-buttons-container {
+    margin-top: 30px;
+}
+
+
+
+
+
 
 /* main content */
 
